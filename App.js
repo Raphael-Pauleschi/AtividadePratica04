@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import Contador from './src/components/Contador'
+import Duplicador from './src/components/Duplicador'
 
 export default function App() {
   return (
     <View style={style.App}>
     <Contador inicial={500}/>
-      <Text >
-       Oh yeah! da dadadada dada
-      </Text>
+    <Duplicador inicial={2}/>
     </View>
   );
 }
@@ -21,6 +20,5 @@ const style = StyleSheet.create({
     alignItems: "center"
   }
 })
-
 
 
